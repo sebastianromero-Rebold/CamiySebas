@@ -18,71 +18,71 @@
 
 <!-- ===================== COVER / SOBRE ===================== -->
 <div class="cover" id="cover">
-  <div class="cover-bg"></div>
-  <div class="branch-corner branch-tl" aria-hidden="true"></div>
-  <div class="branch-corner branch-br" aria-hidden="true"></div>
+  <div class="cover-texture" aria-hidden="true"></div>
+  <div class="cover-fold" aria-hidden="true"></div>
+  <div class="cover-vignette" aria-hidden="true"></div>
 
-  <div class="envelope-wrap" id="envelopeWrap">
-    <div class="envelope" id="envelope">
-      <div class="env-body">
-        <div class="env-pattern"></div>
-      </div>
-      <div class="env-flap" id="envFlap"></div>
+  <button class="seal" id="sealBtn" aria-label="Abrir invitación">
+    <svg viewBox="0 0 220 220" class="seal-svg">
+      <defs>
+        <filter id="waxEmboss" x="-30%" y="-30%" width="160%" height="160%">
+          <feDropShadow dx="0" dy="1.6" stdDeviation="1.4" flood-color="#a89a78" flood-opacity="0.55"/>
+        </filter>
+      </defs>
+      <path d="M110 14 C 142 12 168 26 182 52 C 197 78 200 104 194 130
+               C 189 156 172 178 146 190 C 120 202 92 202 66 190
+               C 40 178 22 155 18 128 C 14 101 20 74 38 52
+               C 56 30 80 16 110 14 Z" class="wax-base"/>
+      <path d="M110 14 C 142 12 168 26 182 52 C 197 78 200 104 194 130
+               C 189 156 172 178 146 190 C 120 202 92 202 66 190
+               C 40 178 22 155 18 128 C 14 101 20 74 38 52
+               C 56 30 80 16 110 14 Z" class="wax-rim"/>
+      <g class="bouquet" filter="url(#waxEmboss)">
+        <path d="M110 150 C 108 132 108 116 111 100" class="stem"/>
+        <path d="M100 148 C 99 134 100 122 104 110" class="stem"/>
+        <path d="M120 148 C 122 134 121 121 118 109" class="stem"/>
+        <path d="M92 145 C 89 138 90 132 96 128" class="stem"/>
+        <path d="M128 145 C 131 138 130 131 124 127" class="stem"/>
 
-      <button class="seal" id="sealBtn" aria-label="Abrir invitación">
-        <svg viewBox="0 0 140 140" class="seal-svg">
-          <circle cx="70" cy="70" r="62" class="seal-ring-outer"/>
-          <circle cx="70" cy="70" r="52" class="seal-ring-inner"/>
-          <!-- laurel left -->
-          <g class="laurel">
-            <path d="M70 118 C 50 112, 34 98, 28 78 C 24 64, 26 50, 34 38" class="laurel-stem"/>
-            <path d="M32 44 C 26 44, 20 40, 18 34 C 24 32, 30 34, 32 44 Z" class="laurel-leaf"/>
-            <path d="M27 55 C 20 57, 13 55, 9 50 C 15 46, 22 46, 27 55 Z" class="laurel-leaf"/>
-            <path d="M25 68 C 18 71, 11 70, 6 66 C 11 61, 19 61, 25 68 Z" class="laurel-leaf"/>
-            <path d="M27 81 C 20 85, 13 85, 8 82 C 12 76, 20 76, 27 81 Z" class="laurel-leaf"/>
-            <path d="M34 94 C 28 99, 21 100, 16 98 C 19 92, 27 90, 34 94 Z" class="laurel-leaf"/>
-            <path d="M46 108 C 41 113, 34 115, 29 113 C 31 107, 39 104, 46 108 Z" class="laurel-leaf"/>
-          </g>
-          <g class="laurel laurel-r">
-            <path d="M70 118 C 90 112, 106 98, 112 78 C 116 64, 114 50, 106 38" class="laurel-stem"/>
-            <path d="M108 44 C 114 44, 120 40, 122 34 C 116 32, 110 34, 108 44 Z" class="laurel-leaf"/>
-            <path d="M113 55 C 120 57, 127 55, 131 50 C 125 46, 118 46, 113 55 Z" class="laurel-leaf"/>
-            <path d="M115 68 C 122 71, 129 70, 134 66 C 129 61, 121 61, 115 68 Z" class="laurel-leaf"/>
-            <path d="M113 81 C 120 85, 127 85, 132 82 C 128 76, 120 76, 113 81 Z" class="laurel-leaf"/>
-            <path d="M106 94 C 112 99, 119 100, 124 98 C 121 92, 113 90, 106 94 Z" class="laurel-leaf"/>
-            <path d="M94 108 C 99 113, 106 115, 111 113 C 109 107, 101 104, 94 108 Z" class="laurel-leaf"/>
-          </g>
-          <!-- cat emblem -->
-          <g class="cat-emblem" transform="translate(70,64)">
-            <path d="M-20 6 C -20 -8 -12 -18 0 -18 C 12 -18 20 -8 20 6 C 20 18 12 25 0 25 C -12 25 -20 18 -20 6 Z" class="cat-face"/>
-            <path d="M-17 -9 L-25 -24 L-8 -15 Z" class="cat-ear"/>
-            <path d="M17 -9 L25 -24 L8 -15 Z" class="cat-ear"/>
-            <path d="M-6 -10 L2 -10 L-2 -4 Z" class="cat-ear-inner"/>
-            <circle cx="-8" cy="2" r="2.3" class="cat-eye"/>
-            <circle cx="8" cy="2" r="2.3" class="cat-eye"/>
-            <path d="M0 8 L-3 12 L3 12 Z" class="cat-nose"/>
-            <path d="M0 12 C -3 16 -8 16 -10 13 M0 12 C 3 16 8 16 10 13" class="cat-mouth"/>
-            <path d="M-11 8 L-24 6 M-11 11 L-25 12 M-11 14 L-23 17" class="cat-whisker"/>
-            <path d="M11 8 L24 6 M11 11 L25 12 M11 14 L23 17" class="cat-whisker"/>
-          </g>
-        </svg>
-      </button>
-
-      <svg class="fly-cat" viewBox="0 0 60 60" aria-hidden="true">
-        <g transform="translate(30,30)">
-          <path d="M-17 5 C -17 -7 -10 -15 0 -15 C 10 -15 17 -7 17 5 C 17 15 10 21 0 21 C -10 21 -17 15 -17 5 Z" fill="#d8b978"/>
-          <path d="M-14 -7 L-21 -20 L-7 -12 Z" fill="#d8b978"/>
-          <path d="M14 -7 L21 -20 L7 -12 Z" fill="#d8b978"/>
-          <path d="M-5 -8 L2 -8 L-1.5 -3 Z" fill="#e9d3a3"/>
-          <circle cx="-6.5" cy="1.5" r="2" fill="#3a3a34"/>
-          <circle cx="6.5" cy="1.5" r="2" fill="#3a3a34"/>
-          <path d="M0 6.5 L-2.5 10 L2.5 10 Z" fill="#3a3a34"/>
-          <path d="M0 10 C -2.5 13 -6.5 13 -8 10.5 M0 10 C 2.5 13 6.5 13 8 10.5" stroke="#3a3a34" stroke-width="1" fill="none" stroke-linecap="round"/>
+        <g transform="translate(96,90)">
+          <ellipse rx="9" ry="14" transform="rotate(0)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(72)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(144)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(216)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(288)" class="petal"/>
+          <circle r="6" class="petal-center"/>
         </g>
-      </svg>
-    </div>
+        <g transform="translate(126,84) scale(0.82)">
+          <ellipse rx="9" ry="14" transform="rotate(20)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(92)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(164)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(236)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(308)" class="petal"/>
+          <circle r="6" class="petal-center"/>
+        </g>
+        <g transform="translate(110,66) scale(0.68)">
+          <ellipse rx="9" ry="14" transform="rotate(10)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(82)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(154)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(226)" class="petal"/>
+          <ellipse rx="9" ry="14" transform="rotate(298)" class="petal"/>
+          <circle r="6" class="petal-center"/>
+        </g>
 
-    <p class="cover-hint" id="coverHint">Toca el sello para abrir tu invitación</p>
+        <path d="M92 132 C 80 128 72 118 72 106 C 84 108 92 116 94 128 Z" class="leaf"/>
+        <path d="M128 130 C 141 126 149 116 149 104 C 137 106 129 114 127 126 Z" class="leaf"/>
+        <path d="M108 138 C 100 132 96 122 99 112 C 109 116 114 126 112 136 Z" class="leaf"/>
+        <path d="M108 152 L112 152 L114 162 L106 162 Z" class="bow"/>
+      </g>
+    </svg>
+  </button>
+
+  <div class="petal-scatter" aria-hidden="true">
+    <svg class="petal-fly p1" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
+    <svg class="petal-fly p2" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
+    <svg class="petal-fly p3" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
+    <svg class="petal-fly p4" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
+    <svg class="petal-fly p5" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
   </div>
 
   <div class="cover-reveal" id="coverReveal">
@@ -167,6 +167,49 @@
       <svg viewBox="0 0 24 24" class="pin"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
       Ver ubicación
     </a>
+  </section>
+
+  <!-- BIENVENIDA / ILUSTRACIÓN -->
+  <section class="panel welcome-panel">
+    <svg viewBox="0 0 360 200" class="welcome-svg" aria-hidden="true">
+      <ellipse cx="150" cy="187" rx="34" ry="7" class="ws-stone"/>
+      <ellipse cx="195" cy="191" rx="40" ry="7" class="ws-stone"/>
+      <ellipse cx="245" cy="185" rx="26" ry="6" class="ws-stone"/>
+      <ellipse cx="95" cy="190" rx="24" ry="6" class="ws-stone"/>
+
+      <!-- pot with eucalyptus sprigs -->
+      <g transform="translate(72,152)">
+        <path d="M-16 0 L16 0 L12 34 L-12 34 Z" class="ws-pot"/>
+        <rect x="-18" y="-6" width="36" height="8" rx="2" class="ws-pot-rim"/>
+        <path d="M0 -6 C -4 -30 -14 -42 -26 -50" class="ws-stem"/>
+        <path d="M0 -6 C 2 -34 10 -48 22 -58" class="ws-stem"/>
+        <path d="M0 -6 C -1 -32 -1 -46 -1 -60" class="ws-stem"/>
+        <path d="M-14 -30 C -19 -32 -22 -37 -21 -42 C -15 -41 -11 -36 -14 -30Z" class="ws-leaf"/>
+        <path d="M-21 -40 C -26 -41 -29 -46 -28 -51 C -22 -50 -18 -45 -21 -40Z" class="ws-leaf"/>
+        <path d="M10 -36 C 15 -38 18 -43 16 -48 C 10 -47 7 -41 10 -36Z" class="ws-leaf"/>
+        <path d="M18 -48 C 23 -49 26 -54 24 -59 C 18 -58 14 -53 18 -48Z" class="ws-leaf"/>
+        <path d="M-4 -40 C -6 -44 -5 -49 -1 -52 C 2 -48 2 -43 -4 -40Z" class="ws-leaf"/>
+      </g>
+
+      <!-- hanging sign -->
+      <g transform="translate(190,100) rotate(-3)">
+        <path d="M-72 -46 C -84 -60 -92 -70 -88 -84" class="ws-rope"/>
+        <path d="M70 -46 C 82 -60 90 -70 86 -84" class="ws-rope"/>
+        <rect x="-78" y="-46" width="156" height="86" rx="5" class="ws-board"/>
+        <rect x="-68" y="-37" width="136" height="68" rx="2" class="ws-board-inset"/>
+        <text x="0" y="-12" text-anchor="middle" class="ws-text-script">Bienvenidos</text>
+        <text x="0" y="12" text-anchor="middle" class="ws-text-serif">a nuestra historia</text>
+        <path d="M-24 24 C -14 32 14 32 24 24" class="ws-flourish"/>
+      </g>
+
+      <!-- lantern -->
+      <g transform="translate(296,134)">
+        <path d="M-14 -34 L0 -46 L14 -34" class="ws-lantern-line"/>
+        <rect x="-13" y="-34" width="26" height="34" rx="3" class="ws-lantern-body"/>
+        <circle cx="0" cy="-17" r="6" class="ws-lantern-glow"/>
+        <path d="M-13 -6 L13 -6 M-13 -22 L13 -22" class="ws-lantern-line"/>
+      </g>
+    </svg>
   </section>
 
   <!-- ITINERARIO -->

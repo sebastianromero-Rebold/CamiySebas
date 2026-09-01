@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cover = document.getElementById('cover');
-  const envelope = document.getElementById('envelope');
   const sealBtn = document.getElementById('sealBtn');
   const continueBtn = document.getElementById('continueBtn');
   const story = document.getElementById('story');
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function openEnvelope() {
     if (opened) return;
     opened = true;
-    envelope.classList.add('open');
     cover.classList.add('opening');
   }
   sealBtn.addEventListener('click', openEnvelope);
