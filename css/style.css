@@ -50,23 +50,10 @@ img, svg { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: var(--cream);
+  background: var(--cream) url("../images/floral-frame-lanterns.jpg") repeat left top / 380px auto;
   transition: opacity .9s ease, visibility .9s ease;
 }
 .cover.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-
-.cover-decor {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  opacity: .9;
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
-  background-image: var(--leaf-corner-img);
-}
-.cover-decor.tl { top: -20px; left: -20px; }
-.cover-decor.br { bottom: -20px; right: -20px; transform: rotate(180deg); }
 
 .cover-names {
   font-family: var(--script);
@@ -145,8 +132,7 @@ img, svg { display: block; max-width: 100%; }
 .story {
   position: relative;
   z-index: 1;
-  background: var(--cream) url("../images/side-leaves.jpg") repeat-y left top / 110px auto;
-  background-blend-mode: multiply;
+  background: var(--cream) url("../images/floral-frame-lanterns.jpg") repeat left top / 380px auto;
 }
 
 .panel {
@@ -166,12 +152,6 @@ img, svg { display: block; max-width: 100%; }
   margin-bottom: 22px;
 }
 
-.floral-frame {
-  background-image: url("../images/floral-frame-lanterns.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
 .floral-frame .intro-panel { padding-top: 110px; padding-bottom: 30px; }
 .floral-frame .mono-panel { padding-top: 20px; padding-bottom: 20px; }
 .floral-frame .names-panel { padding-top: 20px; padding-bottom: 110px; }
@@ -238,11 +218,11 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .event-panel {
-  background: var(--paper) url("../images/side-leaves.jpg") repeat-y left top / 110px auto;
+  background: var(--paper) url("../images/floral-frame-lanterns.jpg") repeat left top / 380px auto;
   background-blend-mode: multiply;
   border-radius: 2px;
 }
-.event-panel.alt { background: var(--cream) url("../images/side-leaves.jpg") repeat-y left top / 110px auto; background-blend-mode: multiply; }
+.event-panel.alt { background: var(--cream) url("../images/floral-frame-lanterns.jpg") repeat left top / 380px auto; background-blend-mode: multiply; }
 .event-time {
   display: inline-block;
   font-family: var(--sans);
@@ -299,7 +279,6 @@ img, svg { display: block; max-width: 100%; }
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
-  border-radius: 4px;
 }
 
 .section-heading {
@@ -413,7 +392,7 @@ img, svg { display: block; max-width: 100%; }
 
 .closing-panel {
   padding: 100px 28px 70px;
-  background: var(--sage-900) url("../images/side-leaves.jpg") repeat-y left top / 110px auto;
+  background: var(--sage-900) url("../images/floral-frame-lanterns.jpg") repeat left top / 380px auto;
   background-blend-mode: multiply;
   color: var(--cream-2);
 }
