@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cover = document.getElementById('cover');
   const sealBtn = document.getElementById('sealBtn');
-  const continueBtn = document.getElementById('continueBtn');
   const story = document.getElementById('story');
 
   document.body.classList.add('locked');
@@ -11,17 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (opened) return;
     opened = true;
     cover.classList.add('opening');
+    setTimeout(() => {
+      document.body.classList.remove('locked');
+      cover.classList.add('hidden');
+      story.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 550);
   }
   sealBtn.addEventListener('click', openEnvelope);
-
-  function enterStory() {
-    document.body.classList.remove('locked');
-    cover.classList.add('hidden');
-    setTimeout(() => {
-      story.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 50);
-  }
-  continueBtn.addEventListener('click', enterStory);
 
   // Calendar: adds the wedding to Google Calendar
   const calendarBtn = document.getElementById('calendarBtn');

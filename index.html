@@ -18,81 +18,82 @@
 
 <!-- ===================== COVER / SOBRE ===================== -->
 <div class="cover" id="cover">
-  <div class="cover-texture" aria-hidden="true"></div>
-  <div class="cover-fold" aria-hidden="true"></div>
-  <div class="cover-vignette" aria-hidden="true"></div>
+  <div class="cover-decor tl" aria-hidden="true"></div>
+  <div class="cover-decor br" aria-hidden="true"></div>
 
-  <button class="seal" id="sealBtn" aria-label="Abrir invitación">
-    <svg viewBox="0 0 220 220" class="seal-svg">
-      <defs>
-        <filter id="waxEmboss" x="-30%" y="-30%" width="160%" height="160%">
-          <feDropShadow dx="0" dy="1.6" stdDeviation="1.4" flood-color="#a89a78" flood-opacity="0.55"/>
-        </filter>
-      </defs>
-      <path d="M110 14 C 142 12 168 26 182 52 C 197 78 200 104 194 130
-               C 189 156 172 178 146 190 C 120 202 92 202 66 190
-               C 40 178 22 155 18 128 C 14 101 20 74 38 52
-               C 56 30 80 16 110 14 Z" class="wax-base"/>
-      <path d="M110 14 C 142 12 168 26 182 52 C 197 78 200 104 194 130
-               C 189 156 172 178 146 190 C 120 202 92 202 66 190
-               C 40 178 22 155 18 128 C 14 101 20 74 38 52
-               C 56 30 80 16 110 14 Z" class="wax-rim"/>
-      <g class="bouquet" filter="url(#waxEmboss)">
-        <path d="M110 150 C 108 132 108 116 111 100" class="stem"/>
-        <path d="M100 148 C 99 134 100 122 104 110" class="stem"/>
-        <path d="M120 148 C 122 134 121 121 118 109" class="stem"/>
-        <path d="M92 145 C 89 138 90 132 96 128" class="stem"/>
-        <path d="M128 145 C 131 138 130 131 124 127" class="stem"/>
+  <p class="cover-names">Camila &amp; Sebastián</p>
+  <p class="cover-date">14 · Noviembre · 2026</p>
 
-        <g transform="translate(96,90)">
-          <ellipse rx="9" ry="14" transform="rotate(0)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(72)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(144)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(216)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(288)" class="petal"/>
-          <circle r="6" class="petal-center"/>
-        </g>
-        <g transform="translate(126,84) scale(0.82)">
-          <ellipse rx="9" ry="14" transform="rotate(20)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(92)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(164)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(236)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(308)" class="petal"/>
-          <circle r="6" class="petal-center"/>
-        </g>
-        <g transform="translate(110,66) scale(0.68)">
-          <ellipse rx="9" ry="14" transform="rotate(10)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(82)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(154)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(226)" class="petal"/>
-          <ellipse rx="9" ry="14" transform="rotate(298)" class="petal"/>
-          <circle r="6" class="petal-center"/>
-        </g>
+  <button class="envelope-card" id="sealBtn" aria-label="Abrir invitación">
+    <svg viewBox="0 0 280 190" class="envelope-svg">
+      <rect x="8" y="16" width="264" height="158" rx="4" class="ec-body"/>
+      <path d="M8 20 L140 108 L272 20" class="ec-flap"/>
+      <path d="M8 172 L110 108 M272 172 L170 108" class="ec-crease"/>
 
-        <path d="M92 132 C 80 128 72 118 72 106 C 84 108 92 116 94 128 Z" class="leaf"/>
-        <path d="M128 130 C 141 126 149 116 149 104 C 137 106 129 114 127 126 Z" class="leaf"/>
-        <path d="M108 138 C 100 132 96 122 99 112 C 109 116 114 126 112 136 Z" class="leaf"/>
-        <path d="M108 152 L112 152 L114 162 L106 162 Z" class="bow"/>
+      <!-- flower spray -->
+      <g transform="translate(214,34) rotate(-8)">
+        <path d="M0 10 C -10 2 -14 -8 -8 -18" class="fs-stem"/>
+        <path d="M10 14 C 6 4 8 -8 18 -16" class="fs-stem"/>
+        <path d="M-4 16 C -12 12 -18 4 -16 -4" class="fs-stem"/>
+        <g transform="translate(-8,-20)">
+          <circle r="3.4" class="fs-petal"/><circle cx="4.4" cy="1.2" r="3.4" class="fs-petal"/>
+          <circle cx="2.7" cy="4.2" r="3.4" class="fs-petal"/><circle cx="-2.7" cy="4.2" r="3.4" class="fs-petal"/>
+          <circle cx="-4.4" cy="1.2" r="3.4" class="fs-petal"/><circle r="1.6" class="fs-center"/>
+        </g>
+        <g transform="translate(19,-18) scale(0.85)">
+          <circle r="3.4" class="fs-petal"/><circle cx="4.4" cy="1.2" r="3.4" class="fs-petal"/>
+          <circle cx="2.7" cy="4.2" r="3.4" class="fs-petal"/><circle cx="-2.7" cy="4.2" r="3.4" class="fs-petal"/>
+          <circle cx="-4.4" cy="1.2" r="3.4" class="fs-petal"/><circle r="1.6" class="fs-center"/>
+        </g>
+        <g transform="translate(-17,-6) scale(0.7)">
+          <circle r="3.4" class="fs-petal"/><circle cx="4.4" cy="1.2" r="3.4" class="fs-petal"/>
+          <circle cx="2.7" cy="4.2" r="3.4" class="fs-petal"/><circle cx="-2.7" cy="4.2" r="3.4" class="fs-petal"/>
+          <circle cx="-4.4" cy="1.2" r="3.4" class="fs-petal"/><circle r="1.6" class="fs-center"/>
+        </g>
+        <path d="M2 8 C -4 4 -8 -2 -6 -9 C 0 -7 3 -1 2 8Z" class="fs-leaf"/>
+        <path d="M-6 10 C -13 8 -18 3 -18 -3 C -11 -3 -7 2 -6 10Z" class="fs-leaf"/>
+      </g>
+
+      <!-- wax seal -->
+      <g transform="translate(120,100)">
+        <circle r="30" class="ec-seal-base"/>
+        <circle r="30" class="ec-seal-rim"/>
+        <g class="ec-bouquet">
+          <path d="M0 20 C -1 10 -1 2 1 -6" class="mb-stem"/>
+          <path d="M-6 19 C -7 11 -6 4 -3 -2" class="mb-stem"/>
+          <path d="M6 19 C 7 11 6 4 3 -2" class="mb-stem"/>
+          <g transform="translate(0,-11)">
+            <ellipse rx="5" ry="8" transform="rotate(0)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(72)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(144)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(216)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(288)" class="mb-petal"/>
+            <circle r="3.4" class="mb-center"/>
+          </g>
+          <g transform="translate(-11,-4) scale(0.72)">
+            <ellipse rx="5" ry="8" transform="rotate(30)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(102)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(174)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(246)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(318)" class="mb-petal"/>
+            <circle r="3.4" class="mb-center"/>
+          </g>
+          <g transform="translate(11,-4) scale(0.72)">
+            <ellipse rx="5" ry="8" transform="rotate(10)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(82)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(154)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(226)" class="mb-petal"/>
+            <ellipse rx="5" ry="8" transform="rotate(298)" class="mb-petal"/>
+            <circle r="3.4" class="mb-center"/>
+          </g>
+          <path d="M-4 16 C -10 13 -13 7 -12 1 C -5 3 -3 9 -4 16Z" class="mb-leaf"/>
+          <path d="M4 16 C 10 13 13 7 12 1 C 5 3 3 9 4 16Z" class="mb-leaf"/>
+        </g>
       </g>
     </svg>
   </button>
 
-  <div class="petal-scatter" aria-hidden="true">
-    <svg class="petal-fly p1" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
-    <svg class="petal-fly p2" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
-    <svg class="petal-fly p3" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
-    <svg class="petal-fly p4" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
-    <svg class="petal-fly p5" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9"/></svg>
-  </div>
-
-  <div class="cover-reveal" id="coverReveal">
-    <p class="reveal-script">Nuestra Boda</p>
-    <p class="reveal-caption">Camila &amp; Sebastián</p>
-    <button class="reveal-btn" id="continueBtn">
-      Descubrir la invitación
-      <svg viewBox="0 0 24 24" class="chev"><path d="M6 9l6 6 6-6"/></svg>
-    </button>
-  </div>
+  <p class="cover-hint">Da clic para abrir tu invitación</p>
 </div>
 
 <!-- ===================== CONTENIDO ===================== -->
@@ -171,14 +172,23 @@
 
   <!-- BIENVENIDA / ILUSTRACIÓN -->
   <section class="panel welcome-panel">
-    <svg viewBox="0 0 360 200" class="welcome-svg" aria-hidden="true">
-      <ellipse cx="150" cy="187" rx="34" ry="7" class="ws-stone"/>
-      <ellipse cx="195" cy="191" rx="40" ry="7" class="ws-stone"/>
-      <ellipse cx="245" cy="185" rx="26" ry="6" class="ws-stone"/>
-      <ellipse cx="95" cy="190" rx="24" ry="6" class="ws-stone"/>
+    <svg viewBox="0 0 360 210" class="welcome-svg" aria-hidden="true">
+      <defs>
+        <filter id="wcBlur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+      </defs>
 
-      <!-- pot with eucalyptus sprigs -->
-      <g transform="translate(72,152)">
+      <!-- soft watercolor ground wash -->
+      <ellipse cx="185" cy="175" rx="160" ry="26" class="ws-wash" filter="url(#wcBlur)"/>
+      <ellipse cx="90" cy="150" rx="55" ry="30" class="ws-wash-soft" filter="url(#wcBlur)"/>
+      <ellipse cx="300" cy="150" rx="50" ry="28" class="ws-wash-soft" filter="url(#wcBlur)"/>
+
+      <ellipse cx="150" cy="192" rx="34" ry="7" class="ws-stone"/>
+      <ellipse cx="195" cy="196" rx="40" ry="7" class="ws-stone"/>
+      <ellipse cx="245" cy="190" rx="26" ry="6" class="ws-stone"/>
+      <ellipse cx="95" cy="195" rx="24" ry="6" class="ws-stone"/>
+
+      <!-- pot with eucalyptus sprigs + baby's breath -->
+      <g transform="translate(68,156)">
         <path d="M-16 0 L16 0 L12 34 L-12 34 Z" class="ws-pot"/>
         <rect x="-18" y="-6" width="36" height="8" rx="2" class="ws-pot-rim"/>
         <path d="M0 -6 C -4 -30 -14 -42 -26 -50" class="ws-stem"/>
@@ -189,10 +199,15 @@
         <path d="M10 -36 C 15 -38 18 -43 16 -48 C 10 -47 7 -41 10 -36Z" class="ws-leaf"/>
         <path d="M18 -48 C 23 -49 26 -54 24 -59 C 18 -58 14 -53 18 -48Z" class="ws-leaf"/>
         <path d="M-4 -40 C -6 -44 -5 -49 -1 -52 C 2 -48 2 -43 -4 -40Z" class="ws-leaf"/>
+        <g class="ws-baby">
+          <circle cx="-24" cy="-52" r="2"/><circle cx="-18" cy="-58" r="1.6"/><circle cx="-29" cy="-46" r="1.6"/>
+          <circle cx="20" cy="-60" r="2"/><circle cx="26" cy="-55" r="1.6"/><circle cx="14" cy="-64" r="1.6"/>
+          <circle cx="-2" cy="-62" r="1.8"/><circle cx="3" cy="-68" r="1.5"/>
+        </g>
       </g>
 
       <!-- hanging sign -->
-      <g transform="translate(190,100) rotate(-3)">
+      <g transform="translate(190,104) rotate(-3)">
         <path d="M-72 -46 C -84 -60 -92 -70 -88 -84" class="ws-rope"/>
         <path d="M70 -46 C 82 -60 90 -70 86 -84" class="ws-rope"/>
         <rect x="-78" y="-46" width="156" height="86" rx="5" class="ws-board"/>
@@ -202,8 +217,22 @@
         <path d="M-24 24 C -14 32 14 32 24 24" class="ws-flourish"/>
       </g>
 
+      <!-- mason jar with baby's breath -->
+      <g transform="translate(258,164)">
+        <path d="M-13 0 L13 0 L11 30 C 11 34 -11 34 -11 30 Z" class="ws-jar"/>
+        <path d="M-13 0 L13 0" class="ws-jar-rim"/>
+        <path d="M0 0 C -2 -18 -10 -28 -18 -36" class="ws-stem"/>
+        <path d="M0 0 C 3 -20 9 -30 16 -38" class="ws-stem"/>
+        <path d="M0 0 C 0 -22 0 -32 0 -40" class="ws-stem"/>
+        <g class="ws-baby">
+          <circle cx="-18" cy="-38" r="2.1"/><circle cx="-13" cy="-44" r="1.7"/><circle cx="-22" cy="-32" r="1.7"/>
+          <circle cx="16" cy="-40" r="2.1"/><circle cx="21" cy="-35" r="1.7"/><circle cx="11" cy="-45" r="1.7"/>
+          <circle cx="0" cy="-42" r="2"/><circle cx="-4" cy="-48" r="1.6"/><circle cx="5" cy="-47" r="1.6"/>
+        </g>
+      </g>
+
       <!-- lantern -->
-      <g transform="translate(296,134)">
+      <g transform="translate(305,148)">
         <path d="M-14 -34 L0 -46 L14 -34" class="ws-lantern-line"/>
         <rect x="-13" y="-34" width="26" height="34" rx="3" class="ws-lantern-body"/>
         <circle cx="0" cy="-17" r="6" class="ws-lantern-glow"/>
@@ -212,43 +241,12 @@
     </svg>
   </section>
 
-  <!-- ITINERARIO -->
-  <section class="panel itinerary-panel">
-    <h3 class="section-heading">Itinerario de Actividades</h3>
-    <ul class="timeline">
-      <li>
-        <span class="tl-icon"><svg viewBox="0 0 24 24"><path d="M12 2l7 4v3h-1v11h-4v-6h-4v6H6V9H5V6l7-4z"/></svg></span>
-        <span class="tl-time">10:00 A.M</span>
-        <span class="tl-label">Ceremonia</span>
-      </li>
-      <li>
-        <span class="tl-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16l-7 8v6h4v2H7v-2h4v-6L4 4z"/></svg></span>
-        <span class="tl-time">12:30 del medio día</span>
-        <span class="tl-label">Cóctel de recibida</span>
-      </li>
-      <li>
-        <span class="tl-icon"><svg viewBox="0 0 24 24"><path d="M6 2v9a3 3 0 0 0 2 2.8V22h2v-8.2A3 3 0 0 0 12 11V2h-1v7h-1V2h-1v7H8V2H6zm11 0c-1.7 0-3 2-3 5v4h2v11h2V2z"/></svg></span>
-        <span class="tl-time">1:30 P.M</span>
-        <span class="tl-label">Almuerzo</span>
-      </li>
-      <li>
-        <span class="tl-icon"><svg viewBox="0 0 24 24"><path d="M12 21s-6.5-4.4-9.3-8.4C1 10 1.6 6.6 4.4 5.2 6.7 4 9.4 4.8 12 8c2.6-3.2 5.3-4 7.6-2.8 2.8 1.4 3.4 4.8 1.7 7.4C18.5 16.6 12 21 12 21z"/></svg></span>
-        <span class="tl-time">4:00 P.M</span>
-        <span class="tl-label">Compartir</span>
-      </li>
-      <li>
-        <span class="tl-icon"><svg viewBox="0 0 24 24"><path d="M12 4c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm1 12.9V17h-2v-.1A5 5 0 0 1 7 12h2a3 3 0 1 0 6 0h2a5 5 0 0 1-4 4.9z"/></svg></span>
-        <span class="tl-time">7:00 P.M</span>
-        <span class="tl-label">Despedida Novios</span>
-      </li>
-    </ul>
-  </section>
-
   <!-- DRESS CODE -->
   <section class="panel dress-panel">
     <h3 class="section-heading">Dress Code</h3>
     <p class="dress-sub">Código de vestimenta</p>
-    <p class="dress-code">Semi Informal Jardín</p>
+    <p class="dress-code">Cóctel Campestre</p>
+    <p class="dress-note">Se reservan los colores Blanco y Verde Salvia</p>
   </section>
 
   <!-- LLUVIA DE SOBRES -->
