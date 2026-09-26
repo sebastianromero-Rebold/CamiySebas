@@ -171,10 +171,15 @@ img, svg { display: block; max-width: 100%; }
   margin-bottom: 22px;
 }
 
-.branch-top { display: flex; justify-content: center; margin-bottom: 26px; }
-.branch-svg { width: 280px; height: auto; }
-.branch-stem { fill: none; stroke: var(--gold); stroke-width: 1.6; }
-.leaf-set use { fill: var(--gold-light); stroke: var(--gold-dim); stroke-width: .4; }
+.floral-frame {
+  background-image: url("../images/floral-frame-lanterns.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.floral-frame .intro-panel { padding-top: 110px; padding-bottom: 30px; }
+.floral-frame .mono-panel { padding-top: 20px; padding-bottom: 20px; }
+.floral-frame .names-panel { padding-top: 20px; padding-bottom: 110px; }
 
 .lead-line {
   font-family: var(--serif);
@@ -294,26 +299,12 @@ img, svg { display: block; max-width: 100%; }
 .pin { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
 .welcome-panel { padding: 50px 20px 70px; }
-.welcome-svg { width: 100%; max-width: 380px; margin: 0 auto; height: auto; }
-.ws-stone { fill: var(--sage-100); }
-.ws-pot { fill: var(--sage-700); }
-.ws-pot-rim { fill: var(--sage-800); }
-.ws-stem { fill: none; stroke: var(--sage-600); stroke-width: 1.4; }
-.ws-leaf { fill: var(--sage-500); stroke: var(--sage-700); stroke-width: .5; }
-.ws-rope { fill: none; stroke: var(--gold-dim); stroke-width: 1.4; }
-.ws-board { fill: #8a6a45; stroke: #6e5335; stroke-width: 1.5; }
-.ws-board-inset { fill: none; stroke: rgba(244,239,228,.35); stroke-width: 1; }
-.ws-text-script { font-family: var(--script); font-size: 1.5rem; fill: var(--wax); }
-.ws-text-serif { font-family: var(--serif); font-style: italic; font-size: .95rem; fill: var(--cream-2); }
-.ws-flourish { fill: none; stroke: var(--gold-light); stroke-width: 1; opacity: .8; }
-.ws-lantern-line { fill: none; stroke: var(--gold-dim); stroke-width: 1.4; }
-.ws-lantern-body { fill: rgba(216,185,120,.14); stroke: var(--gold-dim); stroke-width: 1.4; }
-.ws-lantern-glow { fill: var(--gold-light); opacity: .85; }
-.ws-wash { fill: var(--sage-300); opacity: .35; }
-.ws-wash-soft { fill: var(--sage-100); opacity: .55; }
-.ws-baby circle { fill: var(--wax); stroke: var(--sage-300); stroke-width: .4; }
-.ws-jar { fill: rgba(255,255,255,.25); stroke: var(--sage-300); stroke-width: 1.2; }
-.ws-jar-rim { fill: none; stroke: var(--sage-500); stroke-width: 1.6; }
+.welcome-img {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
 
 .section-heading {
   font-family: var(--serif);
@@ -325,14 +316,12 @@ img, svg { display: block; max-width: 100%; }
   margin-bottom: 46px;
 }
 
-.names-panel, .dress-panel, .actions-panel,
-.event-panel, .closing-panel, .mono-panel { position: relative; overflow: hidden; z-index: 0; }
-.names-panel::before, .names-panel::after,
+.dress-panel, .actions-panel,
+.event-panel, .closing-panel { position: relative; overflow: hidden; z-index: 0; }
 .dress-panel::before, .dress-panel::after,
 .actions-panel::before,
 .event-panel::before, .event-panel::after,
-.closing-panel::before, .closing-panel::after,
-.mono-panel::before {
+.closing-panel::before, .closing-panel::after {
   content: "";
   position: absolute;
   width: 150px;
@@ -343,9 +332,6 @@ img, svg { display: block; max-width: 100%; }
   background-image: var(--leaf-corner-img);
   pointer-events: none;
 }
-.names-panel::before { top: -20px; left: -24px; }
-.names-panel::after { bottom: -20px; right: -24px; transform: rotate(180deg); }
-.mono-panel::before { top: -20px; right: -24px; transform: scaleX(-1); opacity: .8; }
 .dress-panel::before { top: -20px; right: -24px; transform: scaleX(-1); }
 .dress-panel::after { display: none; }
 .actions-panel::before { top: -20px; left: -24px; opacity: .7; }
@@ -375,6 +361,19 @@ img, svg { display: block; max-width: 100%; }
   color: var(--ink-soft);
   margin-top: 14px;
   letter-spacing: .02em;
+}
+.color-dots {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+.color-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(58,58,52,.18);
+  box-shadow: 0 3px 8px rgba(58,58,52,.15);
 }
 
 .envelope-panel { padding-top: 60px; padding-bottom: 60px; }
